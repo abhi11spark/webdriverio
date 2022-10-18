@@ -1,0 +1,21 @@
+[{
+    "Subject_Name":"JavaScript-",
+    "Grade_Name":"Grade ",
+    "range_F":"0-35",
+    "range_C":"36-50",
+    "range_B":"51-75",
+    "range_A":"76-90",
+    "range_S":"91-100",
+    "Grade_F":"F",
+    "Grade_C":"C",
+    "Grade_B":"B",
+    "Grade_A":"A",
+    "Grade_S":"S",
+    "Teacher_Name" :"Teacher 1",
+    "Teacher_Name1":"Teacher 2",
+    "Teacher_Name2":"Teacher 3",
+    "ClassRoom_Name":"SDET-JS-",
+    "ClassRoom_Name1":"JavaScript-"
+
+
+}]
