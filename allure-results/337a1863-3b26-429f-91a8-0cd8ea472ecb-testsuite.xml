@@ -1,0 +1,133 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666155310876' stop='1666155322115'>
+    <name>Subject Test -T1 </name>
+    <title>Subject Test -T1 </title>
+    <test-cases>
+        <test-case start='1666155311010' status='passed' stop='1666155314584'>
+            <name>entering url -T1</name>
+            <title>entering url -T1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1666155314588' status='passed' stop='1666155317429'>
+            <name>providing login credentials and logging in -T1</name>
+            <title>providing login credentials and logging in -T1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1666155317440' status='pending' stop='1666155317440'>
+            <name>providing negative login credentials and logging in -T1</name>
+            <title>providing negative login credentials and logging in -T1</title>
+            <labels/>
+            <parameters>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666155317442' status='passed' stop='1666155320214'>
+            <name>adding subject -T1 </name>
+            <title>adding subject -T1 </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1666155320219' status='passed' stop='1666155320529'>
+            <name>scroll in to view search box -T1</name>
+            <title>scroll in to view search box -T1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1666155320532' status='broken' stop='1666155320754'>
+            <name>searching for created subject-T1 </name>
+            <title>searching for created subject-T1 </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='34430673-b026-457b-b0c8-ddf1e88b4cec-attachment.mp4' type='video/mp4' size='102'/>
+            </attachments>
+            <failure>
+                <message>sub_nam is not defined</message>
+                <stack-trace>ReferenceError: sub_nam is not defined
+                    at Context.&lt;anonymous> (D:\TYSS\webdriver io\test\specs\Test_Case_01.js:54:34)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666155320767' status='pending' stop='1666155320767'>
+            <name>deleting created -T1 </name>
+            <title>deleting created -T1 </title>
+            <labels/>
+            <parameters>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666155320769' status='passed' stop='1666155322112'>
+            <name>logout as admin -T1</name>
+            <title>logout as admin -T1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

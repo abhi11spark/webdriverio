@@ -22,20 +22,17 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-    //     // './test/specs/**/*.js',
+        './test/specs/**/*.js',
+        './test/specs/example.e2e.js',
         './test/specs/Test_Case_01.js',
-        // './test/specs/Test_Case_02.js',
-        // './test/specs/Test_Case_03.js',
-        // './test/specs/Test_Case_04.js',
-    //     './test/specs/example.e2e.js',
-    //     './test/specs/spicejet.js',
-    //     './test/specs/paani.js',
-    //     './test/specs/paaniclass.js',
+        './test/specs/Test_Case_02.js',
+        './test/specs/Test_Case_03.js',
+        './test/specs/Test_Case_04.js',
 
     ],
-    // "suites": { smokeSuite: [ ['./test/specs/gradeTest.js','./test/specs/subjectTest.js', ] ],
-    //             reggressionSuite: ['./test/specs/classroomTest.js','./test/specs/subjectRoutingTest.js']
-    //           },
+    "suites": { TestSuite: ['./test/specs/Test_Case_01.js','./test/specs/Test_Case_02.js','./test/specs/Test_Case_03.js','./test/specs/Test_Case_04.js',],
+                otherSuite: ['./test/specs/spicejet.js',]
+              },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -56,21 +53,21 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 1,
+    maxInstances: 4,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
-    
+    capabilities: [
+      {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 5,
-        //
+        maxInstances: 1,
         browserName: 'chrome',
         // 'goog:chromeOptions': {
+        //   excludeSwitches:['enable-automation'],
         //     prefs: {
         //         'profile.managed_default_content_settings.popups': 1,
         //         'profile.managed_default_content_settings.notifications': 1,
@@ -83,15 +80,23 @@ exports.config = {
               'profile.managed_default_content_settings.notifications': 1
             }
           },
-
-
-
         acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
-    }],
+  },
+  // {
+  //     maxInstances: 1,
+  //     browserName: 'firefox',
+  //     acceptInsecureCerts: true, 
+  // },
+  // {
+  //   maxInstances: 1,
+  //   browserName: 'MicrosoftEdge',
+  //   acceptInsecureCerts: true,
+  // },
+  ],
     //
     // ===================
     // Test Configurations
@@ -139,8 +144,11 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver'],
-    
+    services: ['selenium-standalone'],
+    // services: ['chromedriver'],
+    // services: ['edgedriver'], 
+    //  services: ['geckodriver'],
+
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks
@@ -169,8 +177,8 @@ exports.config = {
     // }]],
     // reporters: [
     //   [video, {
-    //     saveAllVideos: false,       // If true, also saves videos for successful test cases
-    //     videoSlowdownMultiplier:25, // Higher to get slower videos, lower for faster videos [Value 1-100]
+    //     saveAllVideos: true,       // If true, also saves videos for successful test cases
+    //     videoSlowdownMultiplier:10, // Higher to get slower videos, lower for faster videos [Value 1-100]
     //   }],
     //   ['allure', {
     //     outputDir: './allure-results',

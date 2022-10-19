@@ -1,7 +1,8 @@
 const fs = require('fs')
 let credentials =  JSON.parse(fs.readFileSync('./testdata/commonData.json'))
 let credentials1 =  JSON.parse(fs.readFileSync('./testdata/TestData.json'))
-describe('Subject Test -T1 ',async()=>{
+describe('Subject Test -T1 ',async function(){
+  this.retries(3)
   var siso = require("../pageobjects/signinoutPage")
   var admin = require("../pageobjects/adminHomePage")
   var spage = require("../pageobjects/subjectPage")
@@ -39,12 +40,8 @@ it('adding subject -T1 ',async()=>{
   await spage.subjectName.setValue(sub_name)
   await spage.submitBtn.isDisplayed()
   await spage.submitBtn.click()
-  // await browser.waitUntil(async()=> await table.scrollToView.isDispalyed(),
-  // {
-  // timeout:5000,
-  // timeoutMsg:'search box text field is not Displayed'
-  // })
-  setTimeout(async()=>{console.log("waiting till pop up closes");},5000)
+  await spage.submitBtn.waitForExist({timeout:5000,timeoutMsg:"waiting"})
+  await table.infoMessage.click()
 })
 })
 it('scroll in to view search box -T1',async()=>{

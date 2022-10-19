@@ -1,12 +1,13 @@
 const fs = require('fs')
 let credentials =  JSON.parse(fs.readFileSync('./testdata/commonData.json'))
 let credentials1 =  JSON.parse(fs.readFileSync('./testdata/TestData.json'))
-describe('classroom Test -T3',async()=>{
+describe('classroom Test -T3',async function(){
+  this.retries(3)
   var siso = require("../pageobjects/signinoutPage")
   var admin = require("../pageobjects/adminHomePage")
   var cRoom = require("../pageobjects/classroomPage")
   var table = require("../pageobjects/tablePage")
-  var ran = Math.floor(Math.random()*100)   
+  var ran = Math.floor(Math.random()*10000)   
 it('entering url -T3',async()=>{
       await siso.openSMSapplication()
     })   
@@ -34,7 +35,6 @@ it('entering url -T3',async()=>{
 it('adding classroom -T3',async()=>{
     let class_name = await ClassRoom_Name+ran
     await admin.AdminVerification()
-    await browser.pause(2000)
     await admin.classroomFeature.click()
     await cRoom.classroomName.isDisplayed()
     await cRoom.classroomName.setValue(class_name)
@@ -42,7 +42,7 @@ it('adding classroom -T3',async()=>{
     await cRoom.studentCount.setValue(ran)
     await cRoom.submitbtn.isDisplayed()
     await cRoom.submitbtn.click()
-    await browser.pause(4000)
+    await table.infoMessage.click()
   })
 })
 it('scroll in to view -T3',async()=>{
@@ -52,7 +52,6 @@ it('scroll in to view -T3',async()=>{
 credentials1.forEach(({ClassRoom_Name})=>{  
 it('searching for created classroom -T3',async()=>{
     let class_name = await ClassRoom_Name+ran
-    await browser.pause(4000)
     await table.searchBox.setValue(class_name)
     var cName=await table.tableValue1.getText()
     var count= await table.tableValue2.getText()
@@ -65,10 +64,8 @@ it('searching for created classroom -T3',async()=>{
 })
 })
 it.skip('deleting created classroom -T3',async()=>{
-    await browser.pause(1000)
     await table.deletebtn.isDisplayed()
     await table.deletebtn.click()
-    await browser.pause(2000)
     await table.yesbtn.isDisplayed()
     await table.yesbtn.click()  
 })

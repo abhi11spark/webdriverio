@@ -1,8 +1,8 @@
 const fs = require('fs')
 let credentials =  JSON.parse(fs.readFileSync('./testdata/commonData.json'))
 let credentials1 =  JSON.parse(fs.readFileSync('./testdata/TestData.json'))
-describe('grade Test -T2',async()=>{
-
+describe('grade Test -T2',async function(){
+  this.retries(3)
     var siso = require("../pageobjects/signinoutPage")
     var admin = require("../pageobjects/adminHomePage")
     var gpage = require("../pageobjects/gradePage")
@@ -65,7 +65,7 @@ it('adding grade -T2',async()=>{
         await gpage.rangeS.setValue(range_S)
         await gpage.gradecharS.setValue(Grade_S)
         await gpage.SubmitBtn.click()
-        await  table.searchBoxVerification()
+        await table.infoMessage.click()
     })
   })
 it('scroll in to view -T2',async()=>{  
@@ -75,7 +75,6 @@ it('scroll in to view -T2',async()=>{
 credentials1.forEach(({Grade_Name})=>{  
 it('searching for created grade -T2',async()=>{
       let grade_name =Grade_Name+ran
-      await  table.searchBoxVerification()
       await table.searchBox.isDisplayed()
       await table.searchBox.setValue(grade_name)
       var gName=await table.tableValue1.getText()

@@ -1,0 +1,137 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666155575661' stop='1666155586531'>
+    <name>Subject Test -T1 </name>
+    <title>Subject Test -T1 </title>
+    <test-cases>
+        <test-case start='1666155575747' status='passed' stop='1666155578181'>
+            <name>entering url -T1</name>
+            <title>entering url -T1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='2d15f25a-eb42-44cf-898b-72d7191a273c-attachment.mp4' type='video/mp4' size='103'/>
+            </attachments>
+        </test-case>
+        <test-case start='1666155578191' status='passed' stop='1666155581299'>
+            <name>providing login credentials and logging in -T1</name>
+            <title>providing login credentials and logging in -T1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='04417b32-d2d6-479a-9422-4b1e0c253500-attachment.mp4' type='video/mp4' size='133'/>
+            </attachments>
+        </test-case>
+        <test-case start='1666155581315' status='pending' stop='1666155581315'>
+            <name>providing negative login credentials and logging in -T1</name>
+            <title>providing negative login credentials and logging in -T1</title>
+            <labels/>
+            <parameters>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666155581317' status='passed' stop='1666155584110'>
+            <name>adding subject -T1 </name>
+            <title>adding subject -T1 </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='90048a86-7fb3-4a9f-b72b-8f078f50945f-attachment.mp4' type='video/mp4' size='88'/>
+            </attachments>
+        </test-case>
+        <test-case start='1666155584120' status='passed' stop='1666155584589'>
+            <name>scroll in to view search box -T1</name>
+            <title>scroll in to view search box -T1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='14650c35-2e52-4d12-869b-ffd240c760c2-attachment.mp4' type='video/mp4' size='101'/>
+            </attachments>
+        </test-case>
+        <test-case start='1666155584598' status='passed' stop='1666155585500'>
+            <name>searching for created subject-T1 </name>
+            <title>searching for created subject-T1 </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='3a8c2f66-0843-4214-9aa7-2b7eff761d5e-attachment.mp4' type='video/mp4' size='102'/>
+            </attachments>
+        </test-case>
+        <test-case start='1666155585508' status='pending' stop='1666155585508'>
+            <name>deleting created -T1 </name>
+            <title>deleting created -T1 </title>
+            <labels/>
+            <parameters>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666155585510' status='passed' stop='1666155586525'>
+            <name>logout as admin -T1</name>
+            <title>logout as admin -T1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='2727dfab-5afb-4abe-82ef-47aeaa1072a2-attachment.mp4' type='video/mp4' size='88'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

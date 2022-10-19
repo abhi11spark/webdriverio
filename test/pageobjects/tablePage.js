@@ -4,6 +4,11 @@ class tablePage {
     {
         return $("//input[@type='search']")
     }
+    get infoMessage()
+    {
+        return $("//div[@id='insert_Success']/descendant::button[@class='close']")
+    }
+   
     get searchBox()
     {
         return $("//input[@type='search']")

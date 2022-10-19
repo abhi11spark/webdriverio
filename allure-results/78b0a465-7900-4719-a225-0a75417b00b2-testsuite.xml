@@ -1,0 +1,187 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666097925449' stop='1666097975541'>
+    <name>Subject Test -T1 </name>
+    <title>Subject Test -T1 </title>
+    <test-cases>
+        <test-case start='1666097925521' status='broken' stop='1666097938804'>
+            <name>entering url -T1</name>
+            <title>entering url -T1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='98fc4f76-ed07-40ca-b220-ba09b669ef1b-attachment.mp4' type='video/mp4' size='103'/>
+            </attachments>
+            <failure>
+                <message>unknown error: net::ERR_NAME_NOT_RESOLVED
+                  (Session info: chrome=106.0.5249.119)</message>
+                <stack-trace>unknown error: unknown error: net::ERR_NAME_NOT_RESOLVED
+                  (Session info: chrome=106.0.5249.119)
+                    at getErrorFromResponseBody (D:\TYSS\webdriver io\node_modules\webdriver\build\utils.js:198:12)
+                    at NodeJSRequest._request (D:\TYSS\webdriver io\node_modules\webdriver\build\request\index.js:166:60)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Browser.wrapCommandFn (D:\TYSS\webdriver io\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Browser.wrapCommandFn (D:\TYSS\webdriver io\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async loginandout.openSMSapplication (D:\TYSS\webdriver io\test\pageobjects\signinoutPage.js:5:5)
+                    at async Context.&lt;anonymous> (D:\TYSS\webdriver io\test\specs\Test_Case_01.js:11:3)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666097938819' status='broken' stop='1666097949387'>
+            <name>providing login credentials and logging in -T1</name>
+            <title>providing login credentials and logging in -T1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='240a1b37-9f8e-4535-b250-c91e2c761b91-attachment.mp4' type='video/mp4' size='133'/>
+            </attachments>
+            <failure>
+                <message>Can't call setValue on element with selector "[id=email]" because element wasn't found</message>
+                <stack-trace>Error: Can't call setValue on element with selector "[id=email]" because element wasn't found
+                    at implicitWait (D:\TYSS\webdriver io\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (D:\TYSS\webdriver io\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (D:\TYSS\webdriver io\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (D:\TYSS\webdriver io\test\specs\Test_Case_01.js:16:3)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666097949403' status='pending' stop='1666097949403'>
+            <name>providing negative login credentials and logging in -T1</name>
+            <title>providing negative login credentials and logging in -T1</title>
+            <labels/>
+            <parameters>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666097949409' status='broken' stop='1666097959775'>
+            <name>adding subject -T1 </name>
+            <title>adding subject -T1 </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='e890a32e-3a0b-4f61-90cf-584278a66259-attachment.mp4' type='video/mp4' size='88'/>
+            </attachments>
+            <failure>
+                <message>Can't call click on element with selector "//span[text()='Subject']" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "//span[text()='Subject']" because element wasn't found
+                    at implicitWait (D:\TYSS\webdriver io\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (D:\TYSS\webdriver io\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (D:\TYSS\webdriver io\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (D:\TYSS\webdriver io\test\specs\Test_Case_01.js:37:3)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666097959788' status='broken' stop='1666097970109'>
+            <name>scroll in to view search box -T1</name>
+            <title>scroll in to view search box -T1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='722f9270-ef36-4633-8449-ca19a2a330df-attachment.mp4' type='video/mp4' size='101'/>
+            </attachments>
+            <failure>
+                <message>Can't call scrollIntoView on element with selector "//input[@type='search']" because element wasn't found</message>
+                <stack-trace>Error: Can't call scrollIntoView on element with selector "//input[@type='search']" because element wasn't found
+                    at implicitWait (D:\TYSS\webdriver io\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (D:\TYSS\webdriver io\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (D:\TYSS\webdriver io\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (D:\TYSS\webdriver io\test\specs\Test_Case_01.js:48:3)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666097970116' status='broken' stop='1666097970317'>
+            <name>searching for created subject-T1 </name>
+            <title>searching for created subject-T1 </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='4309f31f-0c77-485a-bdf9-cb9bc5758fd2-attachment.mp4' type='video/mp4' size='102'/>
+            </attachments>
+            <failure>
+                <message>ran123 is not defined</message>
+                <stack-trace>ReferenceError: ran123 is not defined
+                    at Context.&lt;anonymous> (D:\TYSS\webdriver io\test\specs\Test_Case_01.js:52:35)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666097970322' status='pending' stop='1666097970322'>
+            <name>deleting created -T1 </name>
+            <title>deleting created -T1 </title>
+            <labels/>
+            <parameters>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666097970324' status='broken' stop='1666097975529'>
+            <name>logout as admin -T1</name>
+            <title>logout as admin -T1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='ee60de28-bdc1-4db0-b113-70bb6ccb6e3f-attachment.mp4' type='video/mp4' size='88'/>
+            </attachments>
+            <failure>
+                <message>toggle bar is not clickable</message>
+                <stack-trace>Error: toggle bar is not clickable
+                    at D:\TYSS\webdriver io\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23
+                    at async Browser.wrapCommandFn (D:\TYSS\webdriver io\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async loginandout.LogoutVerification (D:\TYSS\webdriver io\test\pageobjects\signinoutPage.js:42:5)
+                    at async Context.&lt;anonymous> (D:\TYSS\webdriver io\test\specs\Test_Case_01.js:74:3)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

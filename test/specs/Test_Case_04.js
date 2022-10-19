@@ -1,14 +1,15 @@
 const fs = require('fs')
 let credentials =  JSON.parse(fs.readFileSync('./testdata/commonData.json'))
 let credentials1 =  JSON.parse(fs.readFileSync('./testdata/TestData.json'))
-describe('Subject Routing Test -T4',async()=>{
+describe('Subject Routing Test -T4',async function(){
+  this.retries(3)
   var siso = require("../pageobjects/signinoutPage")
   var admin = require("../pageobjects/adminHomePage")
   var srpage = require("../pageobjects/subjectRoutingPage")
   var table = require("../pageobjects/tablePage")
   var gpage = require("../pageobjects/gradePage")
   var spage = require("../pageobjects/subjectPage")
-  var ran1 =Math.floor(Math.random()*1000)
+  var ran1 =Math.floor(Math.random()*10000)
   var ran2 =Math.floor(Math.random()*10000)
   var ran3 =Math.floor(Math.random()*10000)
   
@@ -52,7 +53,6 @@ describe('Subject Routing Test -T4',async()=>{
               await gpage.hallcharge.setValue(hall_chr)
               await gpage.nextBtn.isDisplayed()
               await gpage.nextBtn.click()
-              await browser.pause(2000)
               for(i=0;i<4;i++){
                   await gpage.plusbtn.click()
               }
@@ -66,11 +66,12 @@ describe('Subject Routing Test -T4',async()=>{
               await gpage.gradecharA.setValue(Grade_A)
               await gpage.rangeS.setValue(range_S)
               await gpage.gradecharS.setValue(Grade_S)
-              await gpage.SubmitBtn.click()
-              await browser.pause(4000)  
+              await gpage.SubmitBtn.click()  
+              await table.infoMessage.click()
           })
         })
   it('scroll in to view -T4',async()=>{
+    await table.scrollToView.isDisplayed()
       await table.scrollToView.scrollIntoView()
     })
     credentials1.forEach(({Grade_Name})=>{  
@@ -97,12 +98,11 @@ describe('Subject Routing Test -T4',async()=>{
       var sub_name=await Subject_Name+ran1
       await admin.subjectFeature.isDisplayed()
       await admin.subjectFeature.click()
-      await browser.pause(2000)
       await spage.subjectName.isDisplayed()
       await spage.subjectName.setValue(sub_name)
       await spage.submitBtn.isDisplayed()
       await spage.submitBtn.click()
-      await browser.pause(2000)
+      await table.infoMessage.click()
     })
       })
     it('scroll in to view search box -T4',async()=>{
@@ -111,7 +111,6 @@ describe('Subject Routing Test -T4',async()=>{
     })
     credentials1.forEach(({Subject_Name})=>{  
     it('searching for created subject-T4 ',async()=>{
-      await browser.pause(4000)
       var sub_name=await Subject_Name+ran1
       await table.searchBox.isDisplayed()
       await table.searchBox.setValue(sub_name)
@@ -128,7 +127,6 @@ describe('Subject Routing Test -T4',async()=>{
   })
     credentials1.forEach(({Grade_Name,Subject_Name,Teacher_Name1})=>{  
   it('creating the routing for the subject -T4',async()=>{
-        await browser.pause(1000)
         let grade_name =Grade_Name+ran1
         var sub_name=await Subject_Name+ran1
         await admin.subjectRoutingFeature.isDisplayed()
@@ -145,7 +143,7 @@ describe('Subject Routing Test -T4',async()=>{
         await srpage.selectFee.setValue(fee)
         await srpage.selectSubmitBtn.isDisplayed()
         await srpage.selectSubmitBtn.click()
-        await browser.pause(4000)     
+        await table.infoMessage.click()    
       })
     })
   it('scroll in to view -T4',async()=>{
@@ -159,7 +157,6 @@ describe('Subject Routing Test -T4',async()=>{
         let teacher = Teacher_Name1
         await table.searchBox.isDisplayed()
         await table.searchBox.setValue(grade_name)
-        await browser.pause(1000)
         var verify = await table.tableValue1.getText()
         await console.log(verify);
         var verify1 = await table.tableValue2.getText()
@@ -178,10 +175,8 @@ describe('Subject Routing Test -T4',async()=>{
       })
     })
   it.skip('deleting created subject routing -T4',async()=>{
-    await browser.pause(1000)
     await table.deletebtn.isDisplayed()
     await table.deletebtn.click()
-    await browser.pause(2000)
     await table.yesbtn.isDisplayed()
     await table.yesbtn.click() 
   })
